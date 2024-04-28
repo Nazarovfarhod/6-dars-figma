@@ -146,6 +146,32 @@ main {
   gap: 2.4rem;
 }
 
+.amy__conatainer {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin-bottom: 8.8rem;
+}
+
+.amy__text-title {
+  font-size: var(--headingM-font-size);
+  font-weight: 700;
+  line-height: var(--headingL-line);
+  color: var(--black);
+  margin-bottom: 3.4rem;
+}
+.amy__text-description {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  color: var(--mediumBrown);
+  margin-bottom: 3.2rem;
+}
+.amy__text-btn {
+  background-color: var(--lightRed);
+  color: var(--liteCream);
+}
+
 /* BREACK POINT */
 
 /* TABLET */
@@ -231,6 +257,37 @@ main {
     width: 333px;
     height: 182px;
     border-radius: 0.8rem;
+  }
+
+  .amy__conatainer {
+    display: flex;
+    align-items: center;
+    gap: 6.9rem;
+    margin-left: -9rem;
+    margin-bottom: 12rem;
+  }
+  .amy__container-img {
+    width: 364px;
+    height: 364px;
+  }
+
+  .amy__text-title {
+    font-size: var(--headingS-font-size);
+    font-weight: 700;
+    line-height: var(--headingS-line);
+    color: var(--black);
+    margin-bottom: 2.4rem;
+  }
+  .amy__text-description {
+    font-size: var(--bodyM-font-size);
+    font-weight: 500;
+    line-height: var(--bodyM-line);
+    color: var(--mediumBrown);
+    margin-bottom: 2.4rem;
+  }
+  .amy__text-btn {
+    background-color: var(--lightRed);
+    color: var(--liteCream);
   }
 }
 
@@ -330,5 +387,40 @@ main {
     width: 333px;
     height: 182px;
     border-radius: 0.8rem;
+  }
+
+  .amy__conatainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 6.9rem;
+  }
+  .amy__container-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .amy__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .amy__text-title {
+    max-width: 343px;
+    font-size: 2.6rem;
+    line-height: 1.25;
+  }
+  .amy__text-description {
+    font-size: 1.6rem;
+    line-height: var(--bodyM-line);
+    color: 1.625;
+    max-width: 343px;
+  }
+  .amy__text-btn {
+    background-color: var(--lightRed);
+    color: var(--liteCream);
   }
 }
