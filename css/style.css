@@ -1,3 +1,21 @@
+@import "./variables.css";
+
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 *,
 *::after,
 *::before {
@@ -28,9 +46,17 @@ img {
 }
 
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 6.4rem;
+}
+
+.btn {
+  padding: 14px 45px;
+  border-radius: 2.8rem;
+  border: none;
 }
 
 /* normalize css problem fixed */
@@ -40,7 +66,7 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 1200px; /* it depends on you project */
+  max-width: 1211px; /* it depends on you project */
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
@@ -49,4 +75,260 @@ h1 {
 
 main {
   flex-grow: 1;
+}
+
+.header__container {
+  padding-top: 3.4rem;
+  margin-bottom: 6.6rem;
+}
+
+.sitenav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav__link {
+  color: var(--liteCream);
+  background-color: var(--black);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75.2rem;
+  margin-bottom: 8rem;
+}
+.hero-title {
+  font-size: var(--headingL-font-size);
+  font-weight: 700;
+  line-height: var(--headingL-line);
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+.hero-text {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  text-align: center;
+  color: var(--mediumBrown);
+}
+
+.services__contaienr {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 13.6rem;
+}
+
+.services__middle {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.servise-wrap {
+  display: flex;
+  gap: 2.4em;
+}
+
+.services__middle-top {
+  display: flex;
+  gap: 2.4rem;
+}
+.services__end {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* BREACK POINT */
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .header__container {
+    padding-top: 3.4rem;
+  }
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .hero__container {
+    max-width: 69rem;
+    margin-bottom: 6.4rem;
+  }
+  .hero-title {
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 2.7rem;
+  }
+  .hero-text {
+    font-size: var(--bodyM-font-size);
+    font-weight: 500;
+    line-height: var(--bodyM-line);
+    text-align: center;
+    color: var(--mediumBrown);
+    max-width: 57.3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services__contaienr {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 12rem;
+  }
+  .services-graphic {
+    width: 333px;
+    height: 364px;
+    border-radius: 0.8rem;
+  }
+
+  .services__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .services__middle-top {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .services__middle-ui-ux {
+    width: 155px;
+    border-radius: 0.8rem;
+    height: 182px;
+  }
+  .services__middle-appes {
+    width: 155px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
+  .services__middle-illustration {
+    width: 333px;
+    height: 158px;
+    border-radius: 0.8rem;
+  }
+  .services__end {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+  .services__end-photography {
+    width: 333px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
+  .services__end-motion {
+    width: 333px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 450px) {
+  .header__container {
+    padding-top: 1.6rem;
+  }
+  .container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .sitenav__link {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: center;
+  }
+  .btn {
+    padding: 8px 28px;
+    border-radius: 2.8rem;
+    border: none;
+  }
+
+  .hero__container {
+    max-width: 69rem;
+    margin-bottom: 6.4rem;
+  }
+  .hero-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .hero-text {
+    font-size: 1.6rem;
+    color: 1.625;
+    max-width: 28.5rem;
+  }
+
+  .services__contaienr {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 12rem;
+    align-items: center;
+  }
+  .services-graphic {
+    width: 333px;
+    height: 364px;
+    border-radius: 0.8rem;
+  }
+
+  .servise-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+  }
+
+  .services__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .services__middle-top {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .services__middle-ui-ux {
+    width: 155px;
+    border-radius: 0.8rem;
+    height: 182px;
+  }
+  .services__middle-appes {
+    width: 155px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
+  .services__middle-illustration {
+    width: 333px;
+    height: 158px;
+    border-radius: 0.8rem;
+  }
+  .services__end {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .services__end-photography {
+    width: 333px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
+  .services__end-motion {
+    width: 333px;
+    height: 182px;
+    border-radius: 0.8rem;
+  }
 }
