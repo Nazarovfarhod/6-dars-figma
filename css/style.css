@@ -94,6 +94,15 @@ main {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.75;
+
+  &:hover {
+    background-color: var(--galacticBlue);
+    color: var(--liteCream);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .hero__container {
@@ -170,6 +179,51 @@ main {
 .amy__text-btn {
   background-color: var(--lightRed);
   color: var(--liteCream);
+
+  &:hover {
+    background-color: var(--summerYellow);
+    color: var(--liteCream);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.cta__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8.1rem;
+  padding-bottom: 8rem;
+  padding-right: 9.5rem;
+  padding-left: 6.5rem;
+  background-color: var(--black);
+  margin-bottom: 5.6rem;
+  border-radius: 1rem;
+}
+
+.cta__container-text {
+  max-width: 540px;
+}
+.cta__container-text-title {
+  font-size: var(--headingM-font-size);
+  font-weight: 700;
+  line-height: var(--headingM-line);
+  text-align: left;
+  color: var(--liteCream);
+  margin-bottom: 2.5rem;
+}
+.cta__container-text-description {
+  font-size: var(--bodyM-font-size);
+  font-weight: 500;
+  line-height: var(--bodyM-line);
+  text-align: left;
+  color: var(--liteCream);
+}
+
+.footer__container {
+  margin-bottom: 6.4rem;
 }
 
 /* BREACK POINT */
@@ -288,6 +342,38 @@ main {
   .amy__text-btn {
     background-color: var(--lightRed);
     color: var(--liteCream);
+  }
+
+  .cta__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5.6rem;
+    padding-bottom: 6.4rem;
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
+    background-color: var(--black);
+    margin-bottom: 5.6rem;
+    border-radius: 1rem;
+  }
+
+  .cta__container-text {
+    max-width: 540px;
+  }
+  .cta__container-text-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--liteCream);
+    margin-bottom: 2.6rem;
+    text-align: center;
+  }
+  .cta__container-text-description {
+    font-size: var(--bodyM-font-size);
+    font-weight: 500;
+    line-height: var(--bodyM-line);
+    text-align: center;
+    color: var(--liteCream);
+    margin-bottom: 2.6rem;
   }
 }
 
@@ -422,5 +508,35 @@ main {
   .amy__text-btn {
     background-color: var(--lightRed);
     color: var(--liteCream);
+  }
+
+  .cta__container {
+    padding-top: 4.9rem;
+    padding-bottom: 4.8rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    background-color: var(--black);
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+  }
+
+  .cta__container-text {
+    max-width: 343px;
+  }
+  .cta__container-text-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--liteCream);
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+  .cta__container-text-description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--liteCream);
+    margin-bottom: 2.4rem;
   }
 }
